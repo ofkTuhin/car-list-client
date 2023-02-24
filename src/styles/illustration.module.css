@@ -1,0 +1,11 @@
+.illustration {
+  padding: 5rem 2rem;
+}
+@media only screen and (max-width: 1023px) {
+  .illustration {
+    display: none;
+  }
+}
+.illustration img {
+  max-width: 80%;
+}

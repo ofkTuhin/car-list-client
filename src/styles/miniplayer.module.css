@@ -1,0 +1,77 @@
+.miniPlayer {
+  position: fixed;
+  width: 320px;
+  bottom: 100px;
+  right: 50px;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+}
+.miniPlayer img {
+  width: 100%;
+}
+.miniPlayer p {
+  font-weight: 500;
+  color: var(--fontPrimary);
+  margin-top: 10px;
+}
+.miniPlayer .open {
+  display: none;
+}
+.close {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  top: -10px;
+  right: -8px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid #e5e5e5;
+}
+.floatingButton .close {
+  display: none;
+}
+.open {
+  display: none;
+}
+
+.floatingButton {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  right: 10px;
+  bottom: 80px;
+  border-radius: 100%;
+  background-color: var(--fontPrimary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.floatingButton:hover {
+  background-color: var(--successGreen);
+}
+.floatingButton:hover span {
+  color: var(--fontPrimary);
+}
+.floatingButton span {
+  color: var(--successGreen);
+  font-weight: 500;
+}
+
+.floatingButton .open {
+  display: block;
+}
+.floatingButton img {
+  display: none;
+}
+.floatingButton p {
+  display: none;
+}

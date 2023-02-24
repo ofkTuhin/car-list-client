@@ -1,0 +1,99 @@
+.progressBar {
+  width: calc(100vw - 100px);
+  position: fixed;
+  height: 65px;
+  background-color: #fff;
+  margin: 0px auto;
+  right: 0;
+  left: 0;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.progressBar .backButton {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-color: #47f5901c;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.progressBar .backButton:hover {
+  background-color: #47f5953a;
+}
+.rangeArea {
+  flex: 1;
+  padding: 0px 20px;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.rangeBody {
+  height: 4px;
+  background-color: #e4e8ee;
+  width: 100%;
+}
+.progress {
+  width: 25%;
+  background-color: var(--fontPrimary);
+  height: 100%;
+  position: relative;
+}
+.progress::after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: var(--fontPrimary);
+  transform: translateY(-50%);
+}
+.progress:hover .tooltip {
+  display: block;
+}
+.tooltip {
+  display: none;
+  position: absolute;
+  top: -70px;
+  left: calc(50% - 65px);
+  background-color: var(--fontPrimary);
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.next span {
+  margin: 0px 5px;
+}
+.tooltip::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: var(--fontPrimary);
+  border-radius: 5px;
+  transform: translateX(-50%) rotate(45deg);
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+}
+.next {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+.next:hover {
+  background-color: var(--fontPrimary);
+}
+.next:hover span {
+  color: #fff;
+}

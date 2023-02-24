@@ -1,0 +1,15 @@
+.questions {
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.questions .qtitle {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--fontPrimary);
+}
+.qtitle span {
+  margin-right: 10px;
+  color: var(--active);
+}

@@ -1,0 +1,12 @@
+.form {
+  padding: 2rem 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.form .button {
+  height: 40px;
+  margin-top: 2rem;
+}
+.form label {
+  margin-top: 16px;
+}

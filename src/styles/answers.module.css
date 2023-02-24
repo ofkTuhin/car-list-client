@@ -1,0 +1,42 @@
+.answers {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 2rem -5px;
+}
+.block {
+  width: 50%;
+  flex: 0 0 50%;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .block {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+.answer {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  background: var(--questionBG);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.answer:hover {
+  background-color: #ccd0dc;
+}
+.answer input {
+  margin-right: 10px;
+}
+.wrong {
+  background-color: var(--dangerRed);
+  font-weight: 600;
+}
+.currect {
+  background-color: var(--successGreen);
+  font-weight: 600;
+}

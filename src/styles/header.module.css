@@ -1,0 +1,64 @@
+.header {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 1;
+  background-color: #fff;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 50%;
+  list-style: none;
+}
+
+.nav ul li {
+  font-weight: 600;
+}
+.nav .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .brand h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.nav .brand img {
+  width: 32px;
+  margin-right: 10px;
+}
+
+.nav .accounts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-size: 12px;
+  width: 50%;
+  gap: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav .brand h3 {
+    display: none;
+  }
+}
+
+.nav .accounts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-size: 12px;
+  width: 50%;
+  gap: 0.5rem;
+}
